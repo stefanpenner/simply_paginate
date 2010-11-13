@@ -16,4 +16,5 @@ module SimplyPaginate
     end
   end
 end
+
 ActionView::Base.send :include, SimplyPaginate::ViewHelpers

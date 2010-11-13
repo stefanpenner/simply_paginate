@@ -1,7 +1,7 @@
 module SimplyPaginate
-  autoload :VERSION,           'simply_paginate/version'
-  autoload :Pagination,        'simply_paginate/pagination'
-  autoload :ViewHelpers,       'simply_paginate/view_helpers'
-  autoload :ControllerHelpers, 'simply_paginate/controller_helpers'
+  VERSION = "0.0.1"
 end
 
+require 'simply_paginate/pagination'
+require 'simply_paginate/view_helpers'
+require 'simply_paginate/controller_helpers'
