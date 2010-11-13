@@ -1,8 +1,10 @@
 require 'action_controller'
-module SimplyPaginate::ControllerHelpers
-  def paginate(collection, *options)
-    SimplePaginate::Pagination.new(collection,*options)
+module SimplyPaginate
+  module ControllerHelpers
+    def paginate(collection, *options)
+      Pagination.new(collection,*options)
+    end
   end
 end
 
-ActionController::Base.send :include,SimplyPaginate::ControllerHelpers
+ActionController::Base.send :include, SimplyPaginate::ControllerHelpers
