@@ -1,8 +1,7 @@
 module SimplyPaginate
-  # Your code goes here...
+  autoload :VERSION,           'simply_paginate/version'
+  autoload :Pagination,        'simply_paginate/pagination'
+  autoload :ViewHelpers,       'simply_paginate/view_helpers'
+  autoload :ControllerHelpers, 'simply_paginate/controller_helpers'
 end
-require 'simply_paginate/version'
-require 'simply_paginate/pagination'
-require 'simply_paginate/view_helpers'
-require 'simply_paginate/controller_helpers'
 
