@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "simply_paginate/version"
+require "simply_paginate"
 
 Gem::Specification.new do |s|
   s.name        = "simply_paginate"
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_development_dependency "rspec", "~> 2.0.0"
   s.add_development_dependency "rake"
+  s.add_development_dependency "ruby-debug"
   s.add_dependency "activerecord",  "~> 3.0.0"
   s.add_dependency "activesupport", "~> 3.0.0"
   s.add_dependency "actionpack",    "~> 3.0.0"
