@@ -5,7 +5,8 @@ module SimplyPaginate
 
     def initialize(count,index)
       @count = count  || 0
-      @index = index  || 0
+      @index = index.try(:to_i) || 1
+      @index = 1 if @index < 1 
     end
 
     def sparse_number_list

@@ -5,7 +5,7 @@ module SimplyPaginate
     def pagination(collection)
       links = []
       total_pages  = collection.count/50
-      current_page = params[:page].try(:to_i)
+      current_page = params[:page]
 
       links << "<div class='paginate'>"
       links << link_to("« Previous",dashboard_url)
